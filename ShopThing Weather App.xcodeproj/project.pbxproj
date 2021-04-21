@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		A15BD1E2262F61FF00924B08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD1E1262F61FF00924B08 /* AppDelegate.swift */; };
 		A15BD1E4262F61FF00924B08 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD1E3262F61FF00924B08 /* SceneDelegate.swift */; };
-		A15BD1E6262F61FF00924B08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD1E5262F61FF00924B08 /* ViewController.swift */; };
 		A15BD1E9262F61FF00924B08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15BD1E7262F61FF00924B08 /* Main.storyboard */; };
 		A15BD1EB262F620300924B08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A15BD1EA262F620300924B08 /* Assets.xcassets */; };
 		A15BD1EE262F620300924B08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15BD1EC262F620300924B08 /* LaunchScreen.storyboard */; };
 		A15BD1F9262F620400924B08 /* ShopThing_Weather_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD1F8262F620400924B08 /* ShopThing_Weather_AppTests.swift */; };
 		A15BD204262F620400924B08 /* ShopThing_Weather_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD203262F620400924B08 /* ShopThing_Weather_AppUITests.swift */; };
+		A15BD227262F6ED100924B08 /* CurrentDayForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD226262F6ED100924B08 /* CurrentDayForecastViewController.swift */; };
+		A15BD22C262F6EEB00924B08 /* FiveDayForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD22B262F6EEB00924B08 /* FiveDayForecastViewController.swift */; };
+		A15BD232262F729E00924B08 /* FiveDayForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD231262F729E00924B08 /* FiveDayForecastTableViewCell.swift */; };
+		A15BD23A262F72D800924B08 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD239262F72D800924B08 /* Weather.swift */; };
+		A15BD23F262F733500924B08 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD23E262F733500924B08 /* Location.swift */; };
+		A15BD244262F9A7C00924B08 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD243262F9A7C00924B08 /* WeatherViewModel.swift */; };
+		A15BD249262F9AB200924B08 /* FiveDayForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD248262F9AB200924B08 /* FiveDayForecastViewModel.swift */; };
+		A15BD24E262F9AD500924B08 /* ConsolidatedWeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD24D262F9AD500924B08 /* ConsolidatedWeatherViewModel.swift */; };
+		A15BD254262F9B3400924B08 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD253262F9B3400924B08 /* WeatherAPI.swift */; };
+		A15BD25C262F9E1600924B08 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD25B262F9E1600924B08 /* UIImageViewExtensions.swift */; };
+		A15BD261262FA08E00924B08 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD260262FA08E00924B08 /* UIViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +48,6 @@
 		A15BD1DE262F61FF00924B08 /* ShopThing Weather App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ShopThing Weather App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15BD1E1262F61FF00924B08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A15BD1E3262F61FF00924B08 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A15BD1E5262F61FF00924B08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A15BD1E8262F61FF00924B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A15BD1EA262F620300924B08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A15BD1ED262F620300924B08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +58,17 @@
 		A15BD1FF262F620400924B08 /* ShopThing Weather AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ShopThing Weather AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A15BD203262F620400924B08 /* ShopThing_Weather_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopThing_Weather_AppUITests.swift; sourceTree = "<group>"; };
 		A15BD205262F620400924B08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A15BD226262F6ED100924B08 /* CurrentDayForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDayForecastViewController.swift; sourceTree = "<group>"; };
+		A15BD22B262F6EEB00924B08 /* FiveDayForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastViewController.swift; sourceTree = "<group>"; };
+		A15BD231262F729E00924B08 /* FiveDayForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastTableViewCell.swift; sourceTree = "<group>"; };
+		A15BD239262F72D800924B08 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		A15BD23E262F733500924B08 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		A15BD243262F9A7C00924B08 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		A15BD248262F9AB200924B08 /* FiveDayForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveDayForecastViewModel.swift; sourceTree = "<group>"; };
+		A15BD24D262F9AD500924B08 /* ConsolidatedWeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsolidatedWeatherViewModel.swift; sourceTree = "<group>"; };
+		A15BD253262F9B3400924B08 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
+		A15BD25B262F9E1600924B08 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		A15BD260262FA08E00924B08 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +121,13 @@
 			children = (
 				A15BD1E1262F61FF00924B08 /* AppDelegate.swift */,
 				A15BD1E3262F61FF00924B08 /* SceneDelegate.swift */,
-				A15BD1E5262F61FF00924B08 /* ViewController.swift */,
-				A15BD1E7262F61FF00924B08 /* Main.storyboard */,
+				A15BD218262F6DE200924B08 /* Model */,
+				A15BD217262F6DCE00924B08 /* View */,
+				A15BD21C262F6DEB00924B08 /* ViewModel */,
+				A15BD21F262F6E1600924B08 /* API */,
+				A15BD252262F9AF500924B08 /* Extentions */,
+				A15BD21E262F6E0D00924B08 /* Controller */,
 				A15BD1EA262F620300924B08 /* Assets.xcassets */,
-				A15BD1EC262F620300924B08 /* LaunchScreen.storyboard */,
 				A15BD1EF262F620400924B08 /* Info.plist */,
 			);
 			path = "ShopThing Weather App";
@@ -126,6 +149,69 @@
 				A15BD205262F620400924B08 /* Info.plist */,
 			);
 			path = "ShopThing Weather AppUITests";
+			sourceTree = "<group>";
+		};
+		A15BD217262F6DCE00924B08 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A15BD230262F726C00924B08 /* CustomCell */,
+				A15BD1E7262F61FF00924B08 /* Main.storyboard */,
+				A15BD1EC262F620300924B08 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A15BD218262F6DE200924B08 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A15BD239262F72D800924B08 /* Weather.swift */,
+				A15BD23E262F733500924B08 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A15BD21C262F6DEB00924B08 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A15BD243262F9A7C00924B08 /* WeatherViewModel.swift */,
+				A15BD248262F9AB200924B08 /* FiveDayForecastViewModel.swift */,
+				A15BD24D262F9AD500924B08 /* ConsolidatedWeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A15BD21E262F6E0D00924B08 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A15BD226262F6ED100924B08 /* CurrentDayForecastViewController.swift */,
+				A15BD22B262F6EEB00924B08 /* FiveDayForecastViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A15BD21F262F6E1600924B08 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A15BD253262F9B3400924B08 /* WeatherAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A15BD230262F726C00924B08 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				A15BD231262F729E00924B08 /* FiveDayForecastTableViewCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		A15BD252262F9AF500924B08 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				A15BD25B262F9E1600924B08 /* UIImageViewExtensions.swift */,
+				A15BD260262FA08E00924B08 /* UIViewControllerExtensions.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +344,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15BD1E6262F61FF00924B08 /* ViewController.swift in Sources */,
+				A15BD254262F9B3400924B08 /* WeatherAPI.swift in Sources */,
+				A15BD24E262F9AD500924B08 /* ConsolidatedWeatherViewModel.swift in Sources */,
+				A15BD22C262F6EEB00924B08 /* FiveDayForecastViewController.swift in Sources */,
+				A15BD261262FA08E00924B08 /* UIViewControllerExtensions.swift in Sources */,
+				A15BD227262F6ED100924B08 /* CurrentDayForecastViewController.swift in Sources */,
+				A15BD232262F729E00924B08 /* FiveDayForecastTableViewCell.swift in Sources */,
 				A15BD1E2262F61FF00924B08 /* AppDelegate.swift in Sources */,
+				A15BD249262F9AB200924B08 /* FiveDayForecastViewModel.swift in Sources */,
+				A15BD23A262F72D800924B08 /* Weather.swift in Sources */,
+				A15BD244262F9A7C00924B08 /* WeatherViewModel.swift in Sources */,
 				A15BD1E4262F61FF00924B08 /* SceneDelegate.swift in Sources */,
+				A15BD25C262F9E1600924B08 /* UIImageViewExtensions.swift in Sources */,
+				A15BD23F262F733500924B08 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
