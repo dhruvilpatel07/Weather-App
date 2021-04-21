@@ -25,6 +25,7 @@
 		A15BD254262F9B3400924B08 /* WeatherAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD253262F9B3400924B08 /* WeatherAPI.swift */; };
 		A15BD25C262F9E1600924B08 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD25B262F9E1600924B08 /* UIImageViewExtensions.swift */; };
 		A15BD261262FA08E00924B08 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD260262FA08E00924B08 /* UIViewControllerExtensions.swift */; };
+		A15BD266262FCC3C00924B08 /* WeatherAPIUnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15BD265262FCC3C00924B08 /* WeatherAPIUnitTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		A15BD253262F9B3400924B08 /* WeatherAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPI.swift; sourceTree = "<group>"; };
 		A15BD25B262F9E1600924B08 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
 		A15BD260262FA08E00924B08 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		A15BD265262FCC3C00924B08 /* WeatherAPIUnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIUnitTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				A15BD1F8262F620400924B08 /* ShopThing_Weather_AppTests.swift */,
 				A15BD1FA262F620400924B08 /* Info.plist */,
+				A15BD265262FCC3C00924B08 /* WeatherAPIUnitTests.swift */,
 			);
 			path = "ShopThing Weather AppTests";
 			sourceTree = "<group>";
@@ -365,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15BD1F9262F620400924B08 /* ShopThing_Weather_AppTests.swift in Sources */,
+				A15BD266262FCC3C00924B08 /* WeatherAPIUnitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

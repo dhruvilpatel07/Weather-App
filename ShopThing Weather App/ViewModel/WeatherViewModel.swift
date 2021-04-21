@@ -31,11 +31,15 @@ struct WeatherViewModel {
     }
     
     var maxTemp: String {
-        return String(format: "%.0f", self.weather.consolidated_weather[0].max_temp)
+        return formatTemp(self.weather.consolidated_weather[0].max_temp)
     }
     
     var minTemp: String {
-        return String(format: "%.0f", self.weather.consolidated_weather[0].min_temp)
+        return formatTemp(self.weather.consolidated_weather[0].min_temp)
+    }
+    
+    func formatTemp(_ temp: Double) -> String {
+        return String(format: "%.0f", temp)
     }
 
 }

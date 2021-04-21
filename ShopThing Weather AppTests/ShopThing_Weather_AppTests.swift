@@ -47,6 +47,7 @@ class ShopThing_Weather_AppTests: XCTestCase {
         
     }
     
+    
     func checkFormattedDate(stringDate: String) -> String {
         
         let dateFormatter = DateFormatter()

@@ -91,4 +91,15 @@ extension CurrentDayForecastViewController: UITextFieldDelegate {
     func textFieldDidEndEditing(_ textField: UITextField) {
         textField.placeholder = "Enter city name"
     }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let city = textField.text, textField.text != "" {
+            weatherAPI.fetchWeather(cityName: city)
+            textField.text = ""
+            textField.endEditing(true)
+        } else {
+            displayAlertSheetWithMessage(with: "Please enter city name!")
+        }
+        return true
+    }
 }
